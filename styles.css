@@ -93,3 +93,46 @@ button{
     text-align: center;
 }
 
+.content-width{
+    max-width: 960px;
+    margin: auto;
+}
+
+.how-it-works-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 40px;
+}
+
+.how-it-works-wrapper > h4{
+    color: rgba(31, 41, 48, 0.8);
+}
+
+.how-it-works{
+    display: flex;
+    justify-content: center;
+}
+
+
+.hiw-content{
+    width: 250px;
+    text-align: center;
+}
+
+.hiw-content > p {
+    width: 180px;
+    font-weight: 400;
+    margin: auto;
+    color: rgba(31, 41, 48, 0.8);
+}
+
+.hiw-image{
+    width: 200px;
+    object-fit: cover;
+    height: 200px;
+    border: solid 2px #3882F6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
