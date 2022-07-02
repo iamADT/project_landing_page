@@ -15,7 +15,8 @@ header{
 
 .nav-left{
     display: flex;
-    width: 280px;
+    max-width: 300px;
+    gap: 8px;
     justify-content: space-between;
     align-items: center;
     font-size: 28px;
@@ -33,10 +34,12 @@ header{
 }
 
 .hero-wrapper{
-    height: 500px;
+    height: fit-content;
     background-color: #1f2930;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
 }
 
 .hero{
@@ -44,16 +47,18 @@ header{
     max-width: 960px;
     margin: auto;
     align-content: center;
-    height: 500px;
-    justify-content: center;
+    height: fit-content;
+    justify-content: space-between;
     color: white;
     align-items: center;
-    
+    flex-wrap: wrap;
 }
 
 .hero-text{
-    width: 500px;
-    padding: 0px 60px 0px 0px;
+    max-width: 400px;
+    align-self: center;
+    margin: 16px;
+
 }
 
 h1{
@@ -113,6 +118,7 @@ button{
 .how-it-works{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -124,7 +130,7 @@ button{
 .hiw-content > p {
     width: 180px;
     font-weight: 400;
-    margin: auto;
+    margin: 0px auto 40px auto;
     color: rgba(31, 41, 48, 0.8);
 }
 
@@ -142,7 +148,7 @@ button{
 }
 
 .quote{
-    padding: 80px 120px;
+    padding: 80px;
 }
 
 .quote > p {
@@ -158,3 +164,70 @@ button{
     justify-content: end;
     font-weight: 600;
 }
+
+.sign-up-section{
+    padding: 40px 100px;
+}
+
+.sign-up-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-color: #3882f6;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    max-width: 700px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.sign-up-heading{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.secondary-button{
+    background-color: none;
+    border: solid 2px white;
+    border-radius: 10px;
+    font-size: 16px;
+    width: fit-content;
+    margin: 20px 20px 0px 20px;
+}
+
+footer{
+    background-color: #1F2937;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .header, .nav-left {
+       font-size: 20px;
+    }
+    .logo-image{
+        width: 28px;
+    }
+    .hero-text{
+        text-align: center;
+        align-items: center;
+    }
+    .hero{
+        justify-content: center;
+    }
+    .quote > p {
+        font-size: 28px;
+    }
+    .sign-up-section{
+        padding: 40px 40px;
+    }
+    .sign-up-wrapper{
+        text-align: center;
+        justify-content: center;
+        padding: 20px 20px;
+    }
+  }
